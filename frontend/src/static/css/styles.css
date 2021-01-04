@@ -40,13 +40,13 @@
   border-radius: 20px;
   border: 0px;
   outline: none;
-  border: 0.01px solid #bbb;
+  border: 1.5px solid #bbb;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
 
 .d-form-control-alt:focus {
-  border: 1px dashed #333;
+  border: 1.5px dashed #333;
 }
 
 .d-form-label {
@@ -587,7 +587,9 @@ svg {
 @media screen and (max-width: 766px) {
   .home-hero-text {
     text-align: center;
-    font-size: 1.3rem;
+  }
+  .home-hero-text h3 {
+    font-size: 2.5rem;
   }
   .home-hero-img {
     max-width: 80vw;

@@ -23,11 +23,11 @@
 
 .d-form-control-alt {
 	@include form-control();
-	border: 0.01px solid #bbb;
+	border: 1.5px solid #bbb;
 	transition: all 0.2s linear;
 
 	&:focus {
-		border: 1px dashed #333;
+		border: 1.5px dashed #333;
 	}
 }
 

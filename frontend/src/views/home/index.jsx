@@ -14,12 +14,14 @@ const HomePage = (props) => {
 	return (
 		<div className="mb-5 pb-1">
 			<Container>
-				<section className="home-hero row pt-5">
+				<section className="home-hero row pt-3">
 					<div className="home-hero-text col-md-6">
 						<h3 className="transit-text-secondary">
 							We've got all your parcel & logistic needs covered
 						</h3>
-						<button className="btn-t-primary">Lets Talk</button>
+						<a href="tel:+233550217104" className="btn-t-primary">
+							Lets Talk
+						</a>
 					</div>
 					<span className="col-md-4">
 						<img src={cardbox} alt="" className="home-hero-img" />
