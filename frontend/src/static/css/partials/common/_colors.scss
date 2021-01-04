@@ -1,0 +1,21 @@
+/* Color Theme Swatches in Hex */
+$transit-primary: #49bfb3;
+$transit-secondary: #f1863a;
+$transit-black: #0d0d0d;
+
+// font colors
+.transit-text-primary {
+	color: $transit-primary !important;
+}
+
+.transit-text-secondary {
+	color: $transit-secondary !important;
+}
+
+.transit-bg-primary {
+	background-color: $transit-primary !important;
+}
+
+.transit-bg-secondary {
+	background-color: $transit-secondary !important;
+}

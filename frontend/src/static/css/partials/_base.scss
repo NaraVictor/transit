@@ -1,0 +1,246 @@
+// base styles
+@import "common/colors";
+@import "common/components";
+
+body {
+	background-color: #eff8fa;
+	// width: 100%;
+	margin: 0px;
+}
+
+* {
+	box-sizing: border-box;
+	//includes element's padding, margin, widths and height into total width & height calculations
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Bree Serif", serif;
+}
+
+p {
+	font-family: "Open Sans", sans-serif;
+}
+
+.clean-title {
+	font-family: "Montserrat", sans-serif !important;
+}
+
+.slick-title {
+	font-family: "Roboto", sans-serif !important;
+}
+
+// to override ion icon default block rule
+svg {
+	display: inline;
+}
+
+.logo {
+	max-height: 40px;
+}
+
+.page-container {
+	position: relative;
+	min-height: 100vh;
+}
+
+.page-content {
+	padding-bottom: 20rem;
+}
+
+.footer {
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	border-top: 0.5rem solid $transit-primary;
+	background-color: #eff8fa;
+}
+
+.pt-10 {
+	padding-top: 10vh;
+}
+
+.pt-15 {
+	padding-top: 15vh;
+}
+
+.pt-20 {
+	padding-top: 20vh;
+}
+
+.hero {
+	display: block;
+	box-sizing: border-box;
+	height: 80vh;
+	// background-color: #49bfb3;
+	clip-path: ellipse(132% 100% at 9% 0%);
+
+	// links
+	// https://getwaves.io/
+	// https://www.cssmatic.net/
+}
+
+// borders
+.b-top {
+	border-top: 0.5px solid #555;
+}
+.b-right {
+	border-right: 0.5px solid #555;
+}
+.b-bottom {
+	border-bottom: 0.5px solid #555;
+}
+.b-left {
+	border-left: 0.5px solid #555;
+}
+
+// t-card
+.t-card-wrapper {
+	position: relative;
+	// perspective: 40em;
+	// display: grid;
+	margin: 15vh 5vw;
+	// transform-style: preserve-3d;
+
+	& h3 {
+		font-size: 3vh;
+		font-weight: 900;
+	}
+
+	& img {
+		height: 30vh;
+	}
+
+	// &:before {
+	// 	--bw: 5px;
+	// 	grid-area: 1 / 1;
+	// 	content: "";
+	// 	border-radius: 15px;
+	// 	backface-visibility: hidden;
+	// 	height: 100%;
+	// 	// width: 50%;
+	// 	// margin-top: calc(-1 * var(--bw));
+	// 	// margin-left: calc(-1 * var(--bw));
+	// 	background: transparent;
+	// 	// transform: translateX(-60px) rotateY(-30deg) rotateX(15deg) scale(1.03);
+	// 	// pointer-events: none;
+	// 	// border: var(--bw) solid #000;
+	// 	// box-sizing: content-box;
+	// }
+}
+
+@mixin t-card-core {
+	border-radius: 10px;
+	height: 20vh;
+	// width: 47.55vw;
+	// background: rgba(249, 198, 26, 0.88);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 30px;
+	backface-visibility: hidden;
+	box-shadow: 0 10px 30px -3px rgba(0, 0, 0, 0.1);
+
+	// & .enclosed {
+	// 	background: #000;
+	// 	color: rgba(249, 198, 26, 1);
+	// 	padding: 0 5px;
+	// 	display: inline-block;
+	// 	transform: translate(-1px, 1px) scale(0.75);
+	// 	transform-origin: right center;
+	// }
+
+	& img {
+		max-width: 25vw;
+	}
+}
+
+.t-card {
+	@include t-card-core();
+	// transform: translateX(10px) rotateY(25deg) rotateX(10deg);
+}
+
+.t-card-reverse {
+	@include t-card-core();
+	// transform: translateX(-10px) rotateY(-25deg) rotateX(-10deg);
+}
+
+.t-card-wrapper:hover > div,
+.t-card-wrapper:hover:before {
+	transform: none;
+}
+
+.t-card-wrapper > div,
+.t-card-wrapper:before {
+	will-change: transform;
+	transition: 0.3s transform cubic-bezier(0.25, 0.46, 0.45, 1);
+}
+
+// Subscription Cards
+.s-card {
+	position: relative;
+
+	&:hover {
+		transition: all 0.3s linear;
+		color: whitesmoke;
+		background-color: #555;
+		border-radius: 3px;
+		// background: linear-gradient(-45deg, $transit-secondary, $transit-primary);
+	}
+}
+
+.s-card-side {
+	border-radius: 3px;
+	box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+
+.s-card-title {
+	padding: 4rem 2rem 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.s-card-heading {
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+
+.s-card-heading-span {
+	padding: 1rem 1.5rem;
+	box-decoration-break: clone;
+}
+
+.s-card-details {
+	padding: 0 2rem 2rem;
+	text-align: center;
+	padding: 0 30px 0 0;
+}
+
+.s-card-details ul {
+	list-style: none;
+	margin: 0 auto;
+}
+
+.s-card-details ul li {
+	font-size: 1rem;
+	padding: 1rem;
+}
+
+.s-card-details ul li:not(:last-child) {
+	border-bottom: 1px solid #eee;
+}
+
+// .s-card-cta {
+// 	position: absolute;
+// 	top: 50%;
+// 	left: 50%;
+// 	transform: translate(-50%, -50%);
+// 	width: 90%;
+// 	text-align: center;
+// }

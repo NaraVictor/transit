@@ -1,0 +1,38 @@
+.faq-q {
+	color: $transit-secondary;
+}
+
+.faq-ans {
+	// background-color: $transit-primary;
+	color: $transit-primary;
+	display: inline-block;
+	font-weight: 700;
+	font-style: italic;
+	padding: 5px 10px;
+	border-radius: 25px;
+}
+
+.faq-ans::before {
+	content: "---> ";
+}
+
+.faq {
+	margin: 20px 0px;
+}
+
+.transit-map {
+	width: 100vw;
+	height: 50vh;
+}
+
+// .pin-text {
+// 	width: 100px;
+// 	font-weight: bold;
+// }
+
+@media screen and (max-width: 766px) {
+	// SUPPORT
+	.support-page {
+		margin-bottom: 30vh;
+	}
+}

@@ -1,0 +1,52 @@
+.about-page {
+	// background-color: #eee;
+	// margin-bottom: -25px;
+}
+
+.core-values {
+	background-color: #0d0325;
+	border-radius: 100px;
+
+	& img {
+		max-height: 9rem;
+	}
+}
+
+.team-member {
+	& p {
+		color: $transit-secondary;
+		margin: 1px;
+	}
+
+	& p:nth-child(2) {
+		color: black;
+		margin-bottom: 2px;
+	}
+
+	& .member-links a {
+		margin: 7px;
+	}
+
+	& img {
+		height: 20vh;
+		border-radius: 100%;
+	}
+}
+
+.about-hero-text {
+	font-family: "Abril Fatface", "Sans-serif";
+	font-size: 2.5rem;
+}
+
+@media screen and (max-width: 766px) {
+	// ABOUT
+
+	.about-page {
+		// background-color: #eee;
+		padding-bottom: 20vh;
+	}
+
+	.about-hero-text {
+		font-size: 1.8rem;
+	}
+}

@@ -1,0 +1,20 @@
+@mixin fluid-radius {
+	// https://9elements.github.io/fancy-border-radius/#59.16.71.72--378.377
+	// link to site
+	border-radius: 100% 0% 70% 30% / 33% 53% 47% 67%;
+}
+
+@mixin fluid-radius2 {
+	border-radius: 16% 84% 28% 72% / 59% 71% 29% 41%;
+}
+
+@mixin t-btn {
+	padding: 7px 15px;
+	border: 0px;
+	border-radius: 25px;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: none;
+	}
+}

@@ -1,0 +1,30 @@
+.solutions-hero-image {
+	height: 60vh;
+	margin: -300px 0 0 40%;
+}
+
+@media screen and (max-width: 766px) {
+	// SERVICES
+	.services-section {
+		border-radius: 0 100px 0 0;
+		padding-top: 10px;
+	}
+
+	.service {
+		svg {
+			text-align: center;
+			width: 70%;
+			margin-bottom: 30px;
+		}
+	}
+
+	// SOLUTION
+	.solutions-page {
+		margin-bottom: 25vh;
+	}
+
+	.solutions-hero-image {
+		height: 30vh;
+		margin: -50px 0 0 0;
+	}
+}

@@ -1,0 +1,28 @@
+@import "./utils";
+@import "./colors";
+
+.btn-t-primary {
+	@include t-btn();
+	background-color: $transit-primary;
+	color: white;
+
+	transition: all 0.3s linear;
+
+	&:hover {
+		background-color: black;
+		color: white;
+	}
+}
+
+.btn-t-secondary {
+	@include t-btn();
+	background-color: $transit-secondary;
+	color: white;
+
+	transition: all 0.3s linear;
+
+	&:hover {
+		background-color: black;
+		color: white;
+	}
+}

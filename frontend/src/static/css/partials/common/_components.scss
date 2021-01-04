@@ -1,0 +1,43 @@
+.circle {
+	border: 2px solid $transit-primary;
+	border-radius: 100%;
+	padding: 0.5vh 1.2vh;
+	display: inline;
+}
+
+@mixin form-control() {
+	padding: 10px 15px;
+	border-radius: 20px;
+	border: 0px;
+	outline: none;
+}
+
+.d-form-control {
+	@include form-control();
+	transition: border 0.2s ease-in-out;
+
+	&:focus {
+		border: 2px solid $transit-secondary;
+	}
+}
+
+.d-form-control-alt {
+	@include form-control();
+	border: 0.01px solid #bbb;
+	transition: all 0.2s linear;
+
+	&:focus {
+		border: 1px dashed #333;
+	}
+}
+
+.d-form-label {
+	padding: 1px;
+	font-size: 0.9rem;
+	display: block;
+	margin: 0px;
+}
+
+#curved-background {
+	margin-top: -10px;
+}

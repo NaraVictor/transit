@@ -1,0 +1,137 @@
+@import "./common/colors";
+
+.t-nav-links {
+	display: flex;
+	justify-content: space-evenly;
+	width: 50%;
+}
+
+.t-nav-item {
+	color: $transit-primary;
+	display: inline-block;
+	text-decoration: none;
+	padding: 5px;
+	// font-size: small;
+	// text-transform: uppercase;
+	font-weight: bold;
+	transition: background-color 0.2s linear;
+
+	&:hover {
+		text-decoration: none;
+		color: $transit-secondary;
+	}
+}
+
+.active-nav {
+	color: white;
+	background-color: $transit-secondary;
+	border-radius: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-decoration: none;
+	font-weight: bold;
+
+	&:hover {
+		color: white;
+	}
+}
+
+.t-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: transparent;
+	position: absolute;
+	z-index: 100;
+	// margin-top: 25px;
+	width: 70vw;
+	margin: 0 18% 0 18%;
+}
+
+.nav-btn {
+	display: none;
+}
+
+#nav-check {
+	display: none;
+}
+
+@media (max-width: 766px) {
+	.active-nav {
+		border-radius: 0px;
+	}
+
+	.t-nav {
+		width: 93%;
+		margin: 0 0 0 15px;
+	}
+
+	.nav-btn {
+		display: inline-block;
+		position: absolute;
+		right: 0px;
+		top: 15px;
+		z-index: 150;
+	}
+
+	.t-nav > .nav-btn > label {
+		display: inline-block;
+		width: 50px;
+		height: 50px;
+		padding: 13px;
+	}
+
+	.t-nav > .t-nav-btn > label:hover,
+	.t-nav #nav-check:checked ~ .t-nav-btn > label {
+		background-color: $transit-secondary;
+	}
+
+	.t-nav span {
+		display: block;
+		width: 25px;
+		height: 10px;
+		border-top: 2px solid $transit-primary;
+	}
+
+	.t-nav-links {
+		padding: 110px 0 70px 0;
+		position: absolute;
+		display: block;
+		width: 100vw;
+		background-color: #333;
+		text-align: center;
+		height: 100vh;
+		transition: all 0.3s ease-in;
+		overflow-y: hidden;
+		top: 0px;
+		left: -15px;
+	}
+
+	.t-nav-links::after {
+		content: "MENU";
+		display: block;
+		margin-top: 90px;
+		color: #777;
+		font-weight: 700;
+		font-size: xx-large;
+	}
+
+	.t-nav-links > a {
+		display: block;
+		width: 100%;
+	}
+
+	#nav-check:not(:checked) ~ .t-nav-links {
+		top: -180px;
+		height: 0px;
+	}
+
+	#nav-check:checked ~ .nav-btn span {
+		border-top: 2px solid $transit-secondary;
+	}
+
+	.t-nav > #nav-check:checked ~ .t-nav-links {
+		height: 100vh;
+		overflow-y: auto;
+	}
+}
