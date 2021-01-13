@@ -39,7 +39,7 @@ const Team = (props) => {
 						<p>
 							<strong>Lawrence Asare</strong>
 						</p>
-						<p>Manager</p>
+						<p>Operations Manager</p>
 						<div className="member-links">
 							<Link to="#">
 								<ion-icon name="logo-facebook"></ion-icon>
@@ -59,7 +59,7 @@ const Team = (props) => {
 						<p>
 							<strong>Ruth A. Adah</strong>
 						</p>
-						<p>Manager</p>
+						<p>Business Development Manager</p>
 						<div className="member-links">
 							<Link to="#">
 								<ion-icon name="logo-facebook"></ion-icon>

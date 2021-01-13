@@ -8,8 +8,8 @@ const TailoredServices = () => {
 
 				<article>
 					<div className="my-5 row">
-						<div className="col-md-6"></div>
-						<div className="col-md-6 text-md-left">
+						{/* <div className="col-md-6"></div> */}
+						<div className="col">
 							<h4 className="transit-text-secondary clean-title">
 								Transit Groceries
 							</h4>
@@ -20,7 +20,7 @@ const TailoredServices = () => {
 						</div>
 					</div>
 
-					<div className="my-5 row">
+					{/* <div className="my-5 row">
 						<div className="col-md-6 text-md-right">
 							<h4 className="transit-text-secondary clean-title">
 								Transit Speed laundry
@@ -32,7 +32,7 @@ const TailoredServices = () => {
 							</p>
 						</div>
 						<div className="col-md-6"></div>
-					</div>
+					</div> */}
 
 					<div className="my-5">
 						<h4 className="transit-text-secondary clean-title">

@@ -6,6 +6,11 @@ import TwentyFourHours from "../../../components/svg/24hrs";
 import FortyEightHours from "./../../../components/svg/48hrs";
 import Rocket from "./../../../components/svg/rocket";
 
+// svg
+import surprise from "../../../static/svg/surprise-delivery.svg";
+import laundry from "../../../static/svg/laundry.svg";
+import moving from "../../../static/svg/moving.svg";
+
 const Services = (props) => {
 	return (
 		<section className="services-section">
@@ -54,12 +59,12 @@ const Services = (props) => {
 						data-aos="fade-up"
 						className="col-md-4 justify-content-center align-self-center  text-md-left ml-md-5">
 						<h5>Same Day Delivery</h5>
-						<p>
-							There will be Express Deliveries for same day deliveries. The
-							Express Delivery is a faster delivery service as compared to the
-							normal delivery service. Clients and their customers will be made
-							aware of this service.
-						</p>
+						<dl>
+							<dt>Normal</dt>
+							<p>Receive or have your package delivered by close of day. </p>
+							<dt>Double Express</dt>
+							<p>Jump ahead of the pack for an urgent delivery</p>
+						</dl>
 					</div>
 				</div>
 				<hr />
@@ -72,9 +77,12 @@ const Services = (props) => {
 						className="col-md-4 offset-md-2 justify-content-center align-self-center text-md-right">
 						<h5>Next Day Delivery</h5>
 						<p>
-							Clients who make use of this service will be offered a discount.
-							Packages will be stored in a warehouse and plans made for delivery
-							for the set day.
+							Relax and deliver/receive your parcels the following day. Packages
+							will be stored in a warehouse and delivery plans made for the set
+							day.
+							<span className="badge rounded-pill bg-success text-white ml-2">
+								Discounts available
+							</span>
 						</p>
 					</div>
 				</div>
@@ -88,8 +96,56 @@ const Services = (props) => {
 						className="col-md-4 justify-content-center align-self-center text-md-left ml-md-5">
 						<h5>Double Express</h5>
 						<p>
-							Yes, not all can want for the same day deliveries schedule. So, a
+							Yes, not all can wait for the same day deliveries schedule. So, a
 							really fast delivery service (instant) is that package for you
+						</p>
+					</div>
+				</div>
+				<hr />
+				<div className="row service d-flex">
+					<div data-aos="fade-left" className="col-md-3 offset-md-1 order-md-3">
+						<img src={surprise} alt="surprise delivery svg" />
+					</div>
+					<div
+						data-aos="fade-up"
+						className="col-md-4 offset-md-2 justify-content-center align-self-center text-md-right">
+						<h5>Surprise Delivery</h5>
+						<p>
+							It could be that special someone that you want to impress or an
+							unannounced delivery service. Our surprise delivery package is
+							that service for you
+						</p>
+					</div>
+				</div>
+				<hr />
+				<div className="row service">
+					<div data-aos="fade-right" className="col-md-3  offset-md-3">
+						<img src={laundry} alt="speed laundry svg" />
+					</div>
+					<div
+						data-aos="fade-up"
+						className="col-md-4 justify-content-center align-self-center text-md-left ml-md-5">
+						<h5>Speed Laundry</h5>
+						<p>
+							Run out of clean clothes and too busy to wash or go to the
+							laundry? We are a call away. Simply call to schedule the pickup
+							and delivery and stay at home relaxing and assured.
+						</p>
+					</div>
+				</div>
+				<hr />
+				<div className="row service d-flex">
+					<div data-aos="fade-left" className="col-md-3 offset-md-1 order-md-3">
+						<img src={moving} alt="Moving laundry svg" />
+					</div>
+					<div
+						data-aos="fade-up"
+						className="col-md-4 offset-md-2 justify-content-center align-self-center text-md-right">
+						<h5>Moving Service</h5>
+						<p>
+							The moving service is designed for heavy logistics delivery and/or
+							relocation. Moving to a new apartment, office, etc? We've got it
+							sorted
 						</p>
 					</div>
 				</div>

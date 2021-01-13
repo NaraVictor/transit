@@ -9,14 +9,13 @@ const AboutUs = (props) => {
 					other, nearly giving up but moving on steadily. Now, the company has
 					seen a gradual growth in the industry with a sizeable fleet with plans
 					for expansion. Our belief in loyal relationships has helped us
-					establish partnerships with Zen Logistics and Wash and Go have been
-					established. Transit parcels began as a vision inspired by God and as
-					a result of that and loyal employees, there has been major growth and
-					improvement in the industry.
+					establish partnerships with Zen Logistics, Wash and Go. Transit
+					parcels began as a vision inspired by God and as a result of that and
+					loyal employees, there has been major growth and improvements.
 				</p>
 				<q>
 					<strong className="transit-text-secondary">
-						Simple Timely Always Delivering
+						Simple, Timely, Always Delivering
 					</strong>
 				</q>
 			</div>

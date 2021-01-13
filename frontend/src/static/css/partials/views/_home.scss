@@ -21,6 +21,14 @@
 	text-align: center;
 }
 
+// how it works
+.how-it-works {
+	.number {
+		font-size: xx-large;
+		font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	}
+}
+
 // Tasks
 .tasks-section {
 	padding-bottom: 200px;
@@ -59,6 +67,10 @@
 
 .service {
 	margin: 40px 0px;
+
+	img {
+		max-height: 25vh;
+	}
 }
 
 // partners

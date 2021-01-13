@@ -2,7 +2,7 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import Slider from "../../components/slider";
 import TailoredServices from "./components/services";
-import SprintZen from "./components/sprintzen";
+// import SprintZen from "./components/sprintzen";
 import Subscriptions from "./components/subscriptions";
 
 // images
@@ -26,7 +26,7 @@ const SolutionsPage = (props) => {
 			</Slider>
 
 			<TailoredServices />
-			<SprintZen />
+			{/* <SprintZen /> */}
 			<Subscriptions />
 		</div>
 	);

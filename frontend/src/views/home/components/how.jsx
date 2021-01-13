@@ -1,18 +1,25 @@
-import { Link } from "react-router-dom";
-
 const HowItWorks = () => {
 	return (
 		<section className="container">
-			<div className="text-center mt-5 pt-4">
-				<h2 className="text-white">How it works</h2>
-				<p className="text-white-50 p-md-3 px-md-5">
-					<Link className="transit-text-secondary mr-2" to="/">
-						Register
-					</Link>
-					your business as a client with Transit, set the time or schedule for
-					deliveries and start business or get a day, list your delivery for the
-					day and call us for delivery.
-				</p>
+			<div className="mt-5 pt-4">
+				<h2 className="text-white text-center">How it works</h2>
+				<div className="text-white-50 p-md-3 text-md-center">
+					<div className="row how-it-works">
+						<div className="col-3 col-md-4 text-right number">1</div>
+						<div className="col-8 text-left step">
+							Register your business as a client with Transit
+						</div>
+						<div className="col-3 col-md-4 text-right number">2</div>
+						<div className="col-8 text-left step">
+							Set the time or schedule for deliveries and start business or get
+							a day
+						</div>
+						<div className="col-3 col-md-4 text-right number">3</div>
+						<div className="col-8 text-left step">
+							List your delivery for the day and call us for delivery.
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 	);

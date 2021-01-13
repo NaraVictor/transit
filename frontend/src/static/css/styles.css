@@ -523,6 +523,11 @@ svg {
   text-align: center;
 }
 
+.how-it-works .number {
+  font-size: xx-large;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
 .tasks-section {
   padding-bottom: 200px;
   border-radius: 150px 0 0 0;
@@ -554,6 +559,10 @@ svg {
 
 .service {
   margin: 40px 0px;
+}
+
+.service img {
+  max-height: 25vh;
 }
 
 .partners {

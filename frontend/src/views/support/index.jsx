@@ -2,7 +2,7 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import Slider from "./../../components/slider";
 import Contact from "./components/contact";
-import FAQ from "./components/faq";
+// import FAQ from "./components/faq";
 import LocateUs from "./components/locate";
 
 const SupportPage = (props) => {
@@ -25,7 +25,7 @@ const SupportPage = (props) => {
 			</Slider>
 			<Contact />
 			<LocateUs />
-			<FAQ />
+			{/* <FAQ /> */}
 		</section>
 	);
 };

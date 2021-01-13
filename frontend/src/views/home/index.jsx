@@ -17,7 +17,7 @@ const HomePage = (props) => {
 				<section className="home-hero row pt-3">
 					<div className="home-hero-text col-md-6">
 						<h3 className="transit-text-secondary">
-							We've got all your parcel & logistic needs covered
+							We've got all your parcel & logistics needs covered
 						</h3>
 						<a href="tel:+233550217104" className="btn-t-primary">
 							Lets Talk
