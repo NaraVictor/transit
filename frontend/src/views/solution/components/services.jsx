@@ -9,7 +9,7 @@ const TailoredServices = () => {
 				<article>
 					<div className="my-5 row">
 						{/* <div className="col-md-6"></div> */}
-						<div className="col">
+						<div className="col-12">
 							<h4 className="transit-text-secondary clean-title">
 								Transit Groceries
 							</h4>
@@ -17,6 +17,12 @@ const TailoredServices = () => {
 								get your shopping list and call us to schedule the buy and
 								delivery for you
 							</p>
+						</div>
+						<div className="col-12 mt-4">
+							<h4 className="transit-text-secondary clean-title">
+								Dedicated Dispatch
+							</h4>
+							<p>Dispatch services customized to your needs and convenience</p>
 						</div>
 					</div>
 
@@ -34,7 +40,7 @@ const TailoredServices = () => {
 						<div className="col-md-6"></div>
 					</div> */}
 
-					<div className="my-5">
+					<div>
 						<h4 className="transit-text-secondary clean-title">
 							Tastic Red Love
 						</h4>

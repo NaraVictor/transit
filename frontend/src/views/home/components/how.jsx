@@ -5,18 +5,25 @@ const HowItWorks = () => {
 				<h2 className="text-white text-center">How it works</h2>
 				<div className="text-white-50 p-md-3 text-md-center">
 					<div className="row how-it-works">
-						<div className="col-3 col-md-4 text-right number">1</div>
-						<div className="col-8 text-left step">
-							Register your business as a client with Transit
+						<div className="col-md-4 col-12 how-group">
+							<span className="number">1</span>
+							<span className="step">Register with us</span>
 						</div>
-						<div className="col-3 col-md-4 text-right number">2</div>
-						<div className="col-8 text-left step">
-							Set the time or schedule for deliveries and start business or get
-							a day
+
+						<div className="col-md-4 col-12 how-group">
+							<span className="number transit-text-primary">2</span>
+							<span className="step">
+								Schedule your daily deliveries
+								<div className="text-left">
+									<span className="d-block">a. Day(s) for delivery</span>
+									<span>b. Time for pickup</span>
+								</div>
+							</span>
 						</div>
-						<div className="col-3 col-md-4 text-right number">3</div>
-						<div className="col-8 text-left step">
-							List your delivery for the day and call us for delivery.
+
+						<div className="col-md-4 col-12 how-group">
+							<span className="number">3</span>
+							<span className="step">Call us for deliveries</span>
 						</div>
 					</div>
 				</div>

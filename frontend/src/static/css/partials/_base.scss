@@ -143,7 +143,7 @@ svg {
 	align-items: center;
 	padding: 30px;
 	backface-visibility: hidden;
-	box-shadow: 0 10px 30px -3px rgba(0, 0, 0, 0.1);
+	// box-shadow: 0 10px 30px -3px rgba(0, 0, 0, 0.1);
 
 	// & .enclosed {
 	// 	background: #000;
@@ -155,7 +155,7 @@ svg {
 	// }
 
 	& img {
-		max-width: 25vw;
+		max-width: 20vw;
 	}
 }
 
@@ -244,3 +244,10 @@ svg {
 // 	width: 90%;
 // 	text-align: center;
 // }
+
+@media screen and (max-width: 769px) {
+	.t-card {
+		height: 5vh;
+		padding: 0px;
+	}
+}

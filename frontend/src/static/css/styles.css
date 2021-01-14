@@ -182,12 +182,10 @@ svg {
   padding: 30px;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  -webkit-box-shadow: 0 10px 30px -3px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 10px 30px -3px rgba(0, 0, 0, 0.1);
 }
 
 .t-card img {
-  max-width: 25vw;
+  max-width: 20vw;
 }
 
 .t-card-reverse {
@@ -205,12 +203,10 @@ svg {
   padding: 30px;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  -webkit-box-shadow: 0 10px 30px -3px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 10px 30px -3px rgba(0, 0, 0, 0.1);
 }
 
 .t-card-reverse img {
-  max-width: 25vw;
+  max-width: 20vw;
 }
 
 .t-card-wrapper:hover > div,
@@ -292,6 +288,13 @@ svg {
 
 .s-card-details ul li:not(:last-child) {
   border-bottom: 1px solid #eee;
+}
+
+@media screen and (max-width: 769px) {
+  .t-card {
+    height: 5vh;
+    padding: 0px;
+  }
 }
 
 /* Color Theme Swatches in Hex */
@@ -523,9 +526,22 @@ svg {
   text-align: center;
 }
 
-.how-it-works .number {
-  font-size: xx-large;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+.how-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.how-group .number {
+  font-size: 4rem;
+  font-family: "Lilita One", cursive;
+  margin-right: 2rem;
 }
 
 .tasks-section {

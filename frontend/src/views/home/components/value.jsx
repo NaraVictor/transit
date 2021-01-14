@@ -11,6 +11,10 @@ const Value = (props) => {
 	return (
 		<section className="values">
 			<div className="container text-center">
+				<h2 className="pt-5 mt-3 transit-text-primary">
+					Values we provide you
+				</h2>
+
 				<ThreeDCard
 					title="Safe & Timely"
 					text="Speed and security ensure we deliver the best experience for our
@@ -22,16 +26,12 @@ const Value = (props) => {
 					title="Fast and Efficient Delivery"
 					text="Just say the word, relax and let's figure out the rest!"
 					imgUrl={moto}
-					bgColor="transit-bg-primary"
-					color="text-white"
 					rightAlign={true}
 				/>
 
 				<ThreeDCard
 					title="Organized delivery"
 					text="There is a package for everyone to meet various demands and needs"
-					bgColor="bg-secondary"
-					color="text-white"
 					imgUrl={organized}
 				/>
 

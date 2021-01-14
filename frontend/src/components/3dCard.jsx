@@ -15,9 +15,7 @@ const ThreeDCard = (props) => {
 	return (
 		<div data-aos="fade-up" className={`t-card-wrapper ${topdownMargin}`}>
 			<div
-				className={`${rightAlign ? "t-card-reverse" : "t-card"} ${
-					bgColor ?? "bg-white"
-				}`}>
+				className={`${rightAlign ? "t-card-reverse " : "t-card "} ${bgColor}`}>
 				<div
 					className={`col-6 ${color ?? "text-black"} ${
 						rightAlign && "order-2"

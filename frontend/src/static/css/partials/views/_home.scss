@@ -22,10 +22,16 @@
 }
 
 // how it works
-.how-it-works {
+
+.how-group {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
 	.number {
-		font-size: xx-large;
-		font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+		font-size: 4rem;
+		font-family: "Lilita One", cursive;
+		margin-right: 2rem;
 	}
 }
 
